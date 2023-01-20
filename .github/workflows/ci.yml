@@ -23,6 +23,7 @@ jobs:
           - os: ubuntu-latest
             version: '^1.6'
             include-all-prereleases: true
+            arch: x64
 
     steps:
       - uses: actions/checkout@v2
