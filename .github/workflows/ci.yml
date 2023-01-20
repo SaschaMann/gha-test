@@ -29,4 +29,4 @@ jobs:
           version: ${{ matrix.version }}
           arch: ${{ matrix.arch }}
       - run: |
-          echo "${{ matrix.version }} - ${{ matrix.os }} - ${{ matrix.arch }} => $(julia --version)"
+          echo "${{ matrix.version }} - ${{ matrix.os }} - ${{ matrix.arch }} => $(julia --version)" >> "$GITHUB_STEP_SUMMARY"
